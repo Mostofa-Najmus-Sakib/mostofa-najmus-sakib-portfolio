@@ -61,6 +61,30 @@ HERO
     animation: slideUp 1s ease forwards;
 }
 
+/* ---------------------------
+   PROFILE PHOTO TOP-LEFT
+----------------------------*/
+.profile-photo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
 /* -------------------------------------------------
 SECTIONS
 ------------------------------------------------- */
@@ -276,6 +300,7 @@ ANIMATIONS
 .section > *:last-child {
     margin-bottom: 10px !important;
 }
+
 
 
 
