@@ -53,6 +53,7 @@ HERO
     color: white;
     text-align: center;
     padding: 40px 20px;
+    position: relative;   /* ← ADD HERE */
 }
 
 .hero-content .animate {
@@ -301,6 +302,7 @@ ANIMATIONS
 .section > *:last-child {
     margin-bottom: 10px !important;
 }
+
 
 
 
