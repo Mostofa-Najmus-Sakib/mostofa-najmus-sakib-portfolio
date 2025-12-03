@@ -76,6 +76,41 @@ SECTIONS
     animation: fadeIn 1s forwards;
 }
 
+/* EDUCATION SECTION */
+
+.edu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.edu-card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary);
+    transition: 0.3s;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.edu-inst {
+    font-weight: bold;
+    margin-bottom: 8px;
+    opacity: 0.85;
+}
+
+.edu-desc {
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+
+
 /* -------------------------------------------------
 SKILLS
 ------------------------------------------------- */
@@ -191,3 +226,4 @@ ANIMATIONS
 @keyframes slideUp {
     to { opacity: 1; transform: translateY(0); }
 }
+
