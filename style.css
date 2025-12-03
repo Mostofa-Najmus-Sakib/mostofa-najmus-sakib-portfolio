@@ -260,8 +260,8 @@ ANIMATIONS
 
 /* Reduce huge gaps between sections */
 .section {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
 
 /* Remove default browser margins that cause large gaps */
@@ -276,6 +276,7 @@ ANIMATIONS
 .section > *:last-child {
     margin-bottom: 10px !important;
 }
+
 
 
 
