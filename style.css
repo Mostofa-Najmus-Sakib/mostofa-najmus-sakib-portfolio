@@ -69,8 +69,8 @@ HERO
     position: absolute;
     top: 25px;
     left: 25px;
-    width: 20px;
-    height: 20px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid white;
@@ -302,6 +302,7 @@ ANIMATIONS
 .section > *:last-child {
     margin-bottom: 10px !important;
 }
+
 
 
 
