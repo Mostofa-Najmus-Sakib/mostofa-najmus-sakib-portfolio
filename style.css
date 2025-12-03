@@ -52,7 +52,7 @@ HERO
     background: linear-gradient(120deg, #0057ff, #00d4ff);
     color: white;
     text-align: center;
-    padding: 10px 20px;
+    padding: 40px 20px;
 }
 
 .hero-content .animate {
@@ -276,6 +276,7 @@ ANIMATIONS
 .section > *:last-child {
     margin-bottom: 10px !important;
 }
+
 
 
 
