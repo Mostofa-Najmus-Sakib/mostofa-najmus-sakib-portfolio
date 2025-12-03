@@ -165,6 +165,18 @@ SECTIONS
         transform: translateY(0);
     }
 }
+/* ---------- EXPERIENCE BULLET STYLES ---------- */
+.timeline-content ul {
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.timeline-content li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+    color: #374151;
+    font-size: 14px;
+}
 
 
 /* -------------------------------------------------
@@ -302,6 +314,7 @@ ANIMATIONS
 .section > *:last-child {
     margin-bottom: 10px !important;
 }
+
 
 
 
