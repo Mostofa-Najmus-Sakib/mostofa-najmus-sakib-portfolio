@@ -258,6 +258,27 @@ ANIMATIONS
 }
 
 
+/* Reduce huge gaps between sections */
+.section {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+/* Remove default browser margins that cause large gaps */
+.section h2, 
+.section h3, 
+.section h4 {
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+/* Reduce gap between final element of a section and next section */
+.section > *:last-child {
+    margin-bottom: 10px !important;
+}
+
+
+
 
 
 
