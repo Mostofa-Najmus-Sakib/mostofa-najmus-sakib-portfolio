@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mostofa | AI & ML Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="chatbot.js" defer></script>
+    <script src="blog.js" defer></script>
+</head>
+
+<body>
+
+<!-- THEME TOGGLE -->
+<button id="theme-toggle">🌙</button>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-content">
+        <h1 class="animate">Mostofa Najmus Sakib</h1>
+        <p class="tagline animate">AI/ML Engineer • Data Scientist • Software Engineer</p>
+        <p class="subtitle animate">Ph.D. Candidate (NLP • LLMs • Generative AI • Graph ML • MLOps)</p>
+
+        <a href="Resume_Mostofa_Sakib.pdf" download class="btn-primary">Download Resume</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>
+        I am a Ph.D. candidate and AI researcher specializing in 
+        LLMs, Generative AI, NLP, adversarial robustness, misinformation detection,
+        graph-based modeling, and scalable ML/MLOps pipelines.
+        I have published research at CSCW, ICWSM, and WSDM and have industry-level
+        experience at NREL and ITD building real-world ML solutions.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section fade-in">
+    <h2>Technical Skills</h2>
+    <div class="skill-grid">
+
+        <div class="skill-card">Python, Java, C++, SQL</div>
+        <div class="skill-card">PyTorch, TensorFlow, Sklearn</div>
+        <div class="skill-card">LLMs, RAG, Transformers</div>
+        <div class="skill-card">Docker, GitHub Actions, MLflow</div>
+        <div class="skill-card">Azure, AWS (Basics)</div>
+        <div class="skill-card">Tableau, Power BI, Pandas</div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section fade-in">
+    <h2>Experience</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>NREL — AI Research Intern</h3>
+            <p>Developed LLM pipelines, adversarial attack/defense methods, 
+            evaluation systems for large-scale mobility datasets.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Idaho Transportation Department</h3>
+            <p>Built fraud detection models, asphalt defect detection using YOLOv8 & U-Net,
+            and backend engineering for AASHTOWare systems.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Boise State University</h3>
+            <p>Research in NLP, misinformation detection, graph ML, human-centered AI, 
+            LLM robustness; published in CSCW, ICWSM, WSDM.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section fade-in">
+    <h2>Highlighted Projects</h2>
+    <div id="project-grid" class="project-grid"></div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="section fade-in">
+    <h2>Blog</h2>
+    <div id="blog-container" class="blog-grid"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/{your-id}" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name *" required />
+        <input type="email" name="email" placeholder="Your Email *" required />
+        <textarea name="message" placeholder="Your Message *" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+</section>
+
+<!-- CHATBOT -->
+<div id="chatbot-widget">
+    <div id="chatbot-header">Mostofa’s AI Assistant</div>
+    <div id="chatbot-messages"></div>
+    <input id="chatbot-input" placeholder="Ask me anything..." />
+</div>
+<button id="chatbot-button">💬</button>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Mostofa • AI/ML Portfolio</p>
+</footer>
+
+</body>
+</html>
