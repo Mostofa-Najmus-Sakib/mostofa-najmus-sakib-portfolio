@@ -76,37 +76,67 @@ SECTIONS
     animation: fadeIn 1s forwards;
 }
 
-/* EDUCATION SECTION */
 
-.edu-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+/* ---------- EDUCATION TIMELINE ---------- */
+
+.timeline {
+    position: relative;
+    margin: 40px auto;
+    padding-left: 30px;
+    border-left: 3px solid #4f46e5;
 }
 
-.edu-card {
-    background: var(--card);
-    padding: 25px;
-    border-radius: 10px;
-    border-left: 5px solid var(--primary);
-    transition: 0.3s;
+.timeline-item {
+    position: relative;
+    margin: 30px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.8s ease forwards;
 }
 
-.edu-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+
+.timeline-icon {
+    position: absolute;
+    left: -41px;
+    top: 0;
+    background: #4f46e5;
+    color: white;
+    font-size: 20px;
+    padding: 10px 11px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-.edu-inst {
-    font-weight: bold;
-    margin-bottom: 8px;
-    opacity: 0.85;
+.timeline-content {
+    background: #ffffff;
+    padding: 15px 20px;
+    margin-left: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-.edu-desc {
-    opacity: 0.9;
-    line-height: 1.5;
+.timeline-content h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #111827;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* Slide animation */
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -226,4 +256,5 @@ ANIMATIONS
 @keyframes slideUp {
     to { opacity: 1; transform: translateY(0); }
 }
+
 
